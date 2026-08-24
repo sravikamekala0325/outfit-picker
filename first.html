@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Outfit Picker 👗</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>✨ Outfit Picker 👗</h1>
+
+        <p class="subtitle">
+            Choose your occasion and discover your outfit!
+        </p>
+
+        <div class="form-box">
+
+            <label for="occasion">Choose Occasion</label>
+
+            <select id="occasion">
+                <option value="">-- Select Occasion --</option>
+                <option value="college">🎓 College</option>
+                <option value="office">💼 Office</option>
+                <option value="party">🎉 Party</option>
+                <option value="date">💕 Date</option>
+                <option value="casual">🌸 Casual</option>
+                <option value="traditional">🪔 Traditional</option>
+                <option value="vacation">🏖️ Vacation</option>
+            </select>
+
+            <button onclick="pickOutfit()">
+                ✨ Pick My Outfit
+            </button>
+
+        </div>
+
+
+        <div id="outfitCard" class="outfit-card">
+
+            <div class="outfit-icon">
+                👗
+            </div>
+
+            <h2>Your Outfit Will Appear Here</h2>
+
+            <p>
+                Select an occasion to get your outfit suggestion.
+            </p>
+
+        </div>
+
+
+        <button
+            id="anotherBtn"
+            class="another-btn"
+            onclick="pickOutfit()"
+            style="display: none;"
+        >
+            🎲 Try Another Outfit
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
